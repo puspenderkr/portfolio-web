@@ -1,0 +1,285 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+/* -------------Header CSS------------------- */
+#header{
+    height: 100vh;
+    background:url(bg.jpg);
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+
+}
+
+.user-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.user-box img{
+    border-radius: 50%;
+    width: 250px;
+    border:2px solid
+}
+.user-box h1{
+    color:black;
+    font-weight: bold;
+    margin: 10px;
+}
+.user-box p{
+    color: black;
+}
+
+.scroll-btn{
+    bottom: 30px;
+    position: absolute;
+    left: 50%;
+    translate: translateX(-50%);
+    border: 2px solid rgba(3, 0, 0, 0.973);
+    padding: 10px 10px 20px;
+    border-radius: 30PX;
+}
+.scroll-bar span{
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 10px;
+    border-radius: 30px;
+}
+.scroll-bar{
+    animation:  mover is infinite alternate;
+}
+
+
+@keyframes mover{
+    0%{transform: translate(0);}
+    100%{transform: translate(10px);}
+}
+
+/* about */
+
+.about{
+    padding-top: 100px;
+    margin-bottom: 10px;
+
+}
+.profile-img{
+    height: 400px;
+}
+.nav-bar{
+    top: 0;
+    position: sticky;
+    z-index: 2;
+
+}
+.navbar{
+    background-color: rgba(236, 240, 230, 0.918);
+}
+.navbar-brand  img{
+height: 50px;
+
+}
+.nav-bar .fa-bars{
+    font-size: 30px;
+
+}
+.navbar-toggler{
+    outline: none !important;
+
+}
+.navbar-nav{
+    float: right;
+    text-align: right;
+
+}
+.nav-link{
+    color: black !important;
+}
+.skills-bar{
+    margin-bottom: 6px;
+    font-weight: 600px;
+
+}
+.progress{
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    border-radius: 10px;
+    background: black !important;
+}
+
+
+/* resume */
+.resume{
+    margin-top: -50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background: rgb(253, 239, 239);
+}
+.resume h3{
+    margin-bottom: 50px;
+}
+.timeline{
+    list-style-type: none;
+    position: relative;
+
+}
+.timeline:before{
+    content: '';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+
+
+}
+.timeline li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: white;
+}
+.timeline li h4{
+    background-color: black;
+    padding: 5px 0 5px 20px;
+    color: wheat;
+    font-size: 15px;
+
+}
+.timeline li h4 span{
+font-weight: bold;
+color: #ccc;
+
+}
+.timeline li:before{
+    content: '';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+/* sevices */
+
+.services{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.services h1{
+    margin-bottom: 15px;
+}
+.services-box{
+    background: whitesmoke;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.services-box .fa{
+    margin: 0 10px;
+    font-size: 20px;
+}
+.services-box span{
+    margin: 30x;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.services-box p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #777;
+}
+.services-box:hover{
+    background: #000;
+    color: white;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 1s;
+}
+.services-box:hover p{
+    color: #fff;
+}
+
+/* contqact */
+.contact{
+    padding-top: 50px;
+    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(foot.jpg) ;
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+    color: white;
+
+}
+.contact .row{
+    padding: 30px 0;
+    font-size: 22px;
+}
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+
+}
+.contact .btn{
+    padding: 10px 25px 10px 25px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    background: transparent;
+}
+.contact.btn:focus{
+    box-shadow: none;
+}
+.contact.btn:hover{
+    border: 2px solid #000 !important;
+    background: #000 !important;
+    transition: 0.6s;
+}
+.contact.btn.fa{
+    margin-right: 10px;
+}
+.footer{
+background: #000;
+height: 50px;
+margin-top: 50px;
+color: #fff;
+padding-top: 10px;
+
+}
+
+/* -----------social icons----------- */
+.social-icons{
+    top: 50%;
+    transform: translateY(-50%);
+    position: sticky;
+    z-index: 1;
+    width: 80px;
+
+}
+.social-icons ul li{
+    height: 40px;
+    width: 40px;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #000;
+}
+.social-icons ul li:hover{
+    padding-left: 30px;
+    width: 80px;
+    transition: 1s;
+}
