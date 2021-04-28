@@ -7,7 +7,7 @@ body{
 /* -------------Header CSS------------------- */
 #header{
     height: 100vh;
-    background:url(bg.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(bg.jpg);
     background-position: center;
     background-attachment:fixed;
     background-size: cover;
@@ -23,22 +23,22 @@ body{
 .user-box img{
     border-radius: 50%;
     width: 250px;
-    border:2px solid
+    border:2px solid #6caed5;
 }
 .user-box h1{
-    color:black;
+    color: #fff;;
     font-weight: bold;
     margin: 10px;
 }
 .user-box p{
-    color: black;
+    color: #fff;
 }
 
 .scroll-btn{
     bottom: 30px;
     position: absolute;
     left: 50%;
-    translate: translateX(-50%);
+    transform: translateX(-50%);
     border: 2px solid rgba(3, 0, 0, 0.973);
     padding: 10px 10px 20px;
     border-radius: 30PX;
@@ -49,20 +49,20 @@ body{
     border-radius: 30px;
 }
 .scroll-bar{
-    animation:  mover is infinite alternate;
+    animation:  mover 1s infinite alternate;
 }
 
 
 @keyframes mover{
-    0%{transform: translate(0);}
-    100%{transform: translate(10px);}
+    0%{transform: translateY(0);}
+    100%{transform: translateY(10px);}
 }
 
 /* about */
 
 .about{
     padding-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: -130px;
 
 }
 .profile-img{
@@ -97,13 +97,13 @@ height: 50px;
 .nav-link{
     color: black !important;
 }
-.skills-bar{
+.skills-bar p{
     margin-bottom: 6px;
     font-weight: 600px;
 
 }
 .progress{
-    border-radius: 16px;
+    border-radius: 16px !important;
     margin-bottom: 10px;
 }
 .progress-bar{
@@ -129,7 +129,7 @@ height: 50px;
 }
 .timeline:before{
     content: '';
-    background: black;
+    background:#555;
     display: inline-block;
     position: absolute;
     left: 29px;
@@ -214,10 +214,10 @@ color: #ccc;
     color: #fff;
 }
 
-/* contqact */
+/* contact */
 .contact{
     padding-top: 50px;
-    background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(foot.jpg) ;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(foot.jpg) ;
     background-position: center;
     background-attachment:fixed;
     background-size: cover;
@@ -269,9 +269,13 @@ padding-top: 10px;
     width: 80px;
 
 }
+.social-icons ul{
+    padding: initial;
+}
 .social-icons ul li{
     height: 40px;
     width: 40px;
+    list-style-type: none;
     padding-left: 12px;
     padding-top: 6px;
     margin-top: 5px;
